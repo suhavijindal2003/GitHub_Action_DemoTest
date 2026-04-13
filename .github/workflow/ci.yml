@@ -1,6 +1,5 @@
 name: CI Pipeline Demo
-
-on:
+on:     #trigger on push command
   push:
     branches: [ "main" ]
 
