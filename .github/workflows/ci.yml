@@ -1,11 +1,11 @@
 name: CI Pipeline Demo
-on:     #trigger on push command
+on: #trigger on push command
   push:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build-and-test:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - name: 📥 Checkout Code
