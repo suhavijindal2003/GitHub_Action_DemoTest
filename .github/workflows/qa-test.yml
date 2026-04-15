@@ -1,9 +1,7 @@
 name: QA Test Pipeline
-
 on:
   push:
     branches: ["main"]
-
 jobs:
   qa-test:
     runs-on: windows-latest
