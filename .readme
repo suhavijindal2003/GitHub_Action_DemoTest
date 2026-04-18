@@ -1,0 +1,32 @@
+Files By Role: Developer vs Tester
+
+
+DEVELOPER Files 👨‍💻
+File	Purpose
+src/app.js	Source code - Functions/logic developed by developers
+package.json	Project configuration, dependencies setup
+
+
+
+TESTER Files 🧪
+File	Purpose
+test/app.test.js	Jest Tests - Automated tests created by testers to verify developer code
+test/manual_test.js	Manual Tests - Custom test runner for QA/testers to manually verify functions
+
+
+BOTH Developer & Tester 🔄
+File	Purpose
+.github/workflows/ci.yml	CI/CD pipeline - Auto-runs tests when code is pushed
+.github/workflows/qa-test.yml	QA Test Pipeline - Runs tests in GitHub Actions
+
+
+Workflow Summary
+Developer writes code → test/app.test.js (Tester)
+       ↓                       ↓
+   src/app.js          Runs: npm test
+                              ↓
+                      Creates test report
+                              ↓
+              GitHub Actions triggers (qa-test.yml)
+                              ↓
+                      Tests PASS/FAIL

@@ -1,9 +1,19 @@
 const { sum, subtract, multiply, divide, isEven, isPositive } = require('../src/app');
 
+//Jest Framework (Node.js environment)
+//test() is a Jest global function that creates a test case
+//expect() is a Jest function that checks if something is true
+//toBe() is a matcher that checks if the value equals the expected result
 // SUM TESTS
 test('adds 2 + 3 = 5', () => {
     expect(sum(2, 3)).toBe(5);
 });
+
+// When "npm test" runs:
+// 1. Jest calls sum(0, 0)
+// 2. sum function returns: 0 + 0 = 0
+// 3. expect(0).toBe(0) compares: 0 === 0 → TRUE
+// 4. Test PASSES ✅
 
 test('adds -5 + 10 = 5', () => {
     expect(sum(-5, 10)).toBe(5);

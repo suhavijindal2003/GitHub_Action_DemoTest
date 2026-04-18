@@ -72,7 +72,7 @@ runTest("TC_15", "Verify -5 is not positive", false, isPositive(-5));
 runTest("TC_16", "Verify 0 is not positive", false, isPositive(0));
 
 // Fail Case for Demo
-runTest("TC_17", "Verify incorrect expected result", 10, sum(3, 3));
+// runTest("TC_17", "Verify incorrect expected result", 10, sum(3, 3));
 
 console.log("\n===== TEST EXECUTION COMPLETED =====");
 
