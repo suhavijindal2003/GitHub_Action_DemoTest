@@ -85,6 +85,6 @@ test('checks 0 is not positive', () => {
 });
 
 // FAIL CASE FOR DEMO
-test('adds 2 + 2 = 5 (FAIL CASE)', () => {
-    expect(sum(2, 2)).toBe(5); // This will fail
-});
+// test('adds 2 + 2 = 5 (FAIL CASE)', () => {
+//     expect(sum(2, 2)).toBe(5); // This will fail
+// });
